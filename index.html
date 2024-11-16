@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Collapse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid px-4 py-2">
+        <a class="navbar-brand fw-bold" href="#home">Mike App</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div id="home" class="container-fluid bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to My Website</h1>
+        <p class="lead">I offer you nothing, and no one cares for this site.</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="container px-4 py-5 text-center">
+    <h2 class="text-center mb-4">About</h2>
+    <p>This page is about myself, who is, undeniably, an exceptionally unique individual — not because of any particularly remarkable skills, but because I have mastered the fine art of convincing people that 'winging it' is a life philosophy. I am the proud owner of a chaotic schedule, an ever-growing collection of half-read books, and an extensive inventory of forgotten hobbies.</p>
+    <p>I may not be a Nobel Prize winner, but I am exceptionally good at surviving coffee-fueled all-nighters, and I consider it a personal achievement that I can stare at a screen for hours without losing my sanity (mostly).</p>
+    <p>When I'm not busy forgetting my to-do list, I’m passionate about *appearing* productive. I thrive on procrastination, live for the thrill of last-minute projects, and embrace the philosophy that anything worth doing is worth doing... eventually.</p>
+    <p>So if you’re here expecting life-changing wisdom, you’ll have to settle for my highly refined ability to laugh at my own misadventures. Feel free to join me in this journey of *almost-greatness*, as I try to navigate adulthood one cup of coffee at a time.</p>
+</div>
+
+<!-- Services Section -->
+<div id="services" class="container px-4 py-5 text-center">
+    <h2 class="text-center mb-4">Services</h2>
+    <p>I offer you nothing but the finest selection of things you didn’t ask for, curated with care to ensure they’ll never actually be of use to you. If you’re looking for completely impractical advice and solutions to problems you don’t have, you’ve come to the right place.</p>
+    <p>I offer you nothing in terms of clarity or direction, but I do provide endless possibilities for overthinking every minor decision. Whether you’re in need of a fresh dose of uncertainty or a splash of confusion, my services are second to none.</p>
+    <p>I offer you nothing that can be measured or tracked — just an invisible aura of mystery and vague promises. Here, I specialize in services that sound important but don’t actually involve any tangible outcomes, perfect for those who appreciate ambiguity.</p>
+    <p>I offer you nothing in the way of real expertise, but I do have a vast collection of impressive-sounding buzzwords and phrases. If you’re in search of terms like “synergistic solutions” and “holistic ideation” with absolutely no follow-up, you’re in the right place.</p>
+    <p>I offer you nothing concrete, but I guarantee a whirlwind of options you’ll never truly understand. My service is to keep you wondering, just slightly out of reach of any actionable steps, because who doesn’t love a good unsolved mystery?</p>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="container px-4 py-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        <!-- Contact Details -->
+        <div class="col-md-6 mt-5">
+            <h5 class="fw-bold">Get in Touch</h5>
+            <p>Feel free to reach out through any of the methods below. We're here to help!</p>
+            <ul class="list-unstyled">
+                <li><strong>Address:</strong> 123 Main St, Cityville, Country</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Email:</strong> contact@example.com</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Follow Us</h5>
+            <a href="#" class="text-primary me-2"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="text-primary me-2"><i class="bi bi-twitter"></i> Twitter</a>
+            <a href="#" class="text-primary"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white text-center py-4">
+    <p class="mb-0">&copy; 2024 Mike App. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
